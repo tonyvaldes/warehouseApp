@@ -1,0 +1,42 @@
+﻿@model WareHouse.Models.PurchaseOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PurchaseOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseOrderDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseOrderDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseOrderStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseOrderStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseOrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseOrderDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PurchaseOrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
